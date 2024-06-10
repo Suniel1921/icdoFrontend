@@ -1,0 +1,20 @@
+.userlist_container{
+    margin-top: 34px;
+}
+
+.form{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+    margin-top: 34px;
+}
+
+
+
+
+/* *****************user list style ()******************* */
+.userListImg{
+    width: 15%;
+}
+
