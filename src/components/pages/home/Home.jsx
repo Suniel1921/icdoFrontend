@@ -18,10 +18,10 @@ const Home = () => {
        <div className="count_components container"><Count/></div>
        <div className="about_component container"><About/></div>
        <div className="missionVision "><MissionVision/></div>
-       {/* <div className="testimonilas_components "><Testimonials/></div> */}
-       <div><PhotoGallery/></div>
+       <div className="photoGallery_component"><PhotoGallery/></div>
        <div className="coverBanner_component"><CoverBanner/></div>
        <div className="support_component container"><SupportUs/></div>
+       <div className="testimonilas_components "><Testimonials/></div>
    
       </div>
     </>
