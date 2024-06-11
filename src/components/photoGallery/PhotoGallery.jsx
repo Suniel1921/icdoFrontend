@@ -7,7 +7,10 @@ const PhotoGallery = () => {
     { src: "/image/Gallery/g1.jpg", alt: "Gallery Image", title: "title goes here" },
     { src: "/image/Gallery/g2.jpg", alt: "Gallery Image", title: "title goes here" },
     { src: "/image/Gallery/g3.jpg", alt: "Gallery Image", title: "title goes here" },
-    { src: "/image/Gallery/g4.jpg", alt: "Gallery Image", title: "title goes here" }
+    { src: "/image/Gallery/g4.jpg", alt: "Gallery Image", title: "title goes here" },
+    { src: "/image/Gallery/g4.jpg", alt: "Gallery Image", title: "title goes here" },
+    { src: "/image/Gallery/g4.jpg", alt: "Gallery Image", title: "title goes here" },
+    { src: "/image/Gallery/g4.jpg", alt: "Gallery Image", title: "title goes here" },
   ];
 
   return (
