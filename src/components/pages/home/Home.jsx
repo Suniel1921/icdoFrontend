@@ -7,6 +7,8 @@ import Testimonials from "../../testimonials/Testimonials";
 import Count from "../../countingNumber/Count";
 import SupportUs from "../../supportUs/SupportUs";
 import CoverBanner from "../../cover/CoverBanner";
+import PhotoGallery from "../../photoGallery/PhotoGallery";
+
 
 const Home = () => {
   return (
@@ -17,6 +19,7 @@ const Home = () => {
        <div className="about_component container"><About/></div>
        <div className="missionVision "><MissionVision/></div>
        {/* <div className="testimonilas_components "><Testimonials/></div> */}
+       <div><PhotoGallery/></div>
        <div className="coverBanner_component"><CoverBanner/></div>
        <div className="support_component container"><SupportUs/></div>
    
