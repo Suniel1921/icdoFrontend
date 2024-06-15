@@ -1,32 +1,37 @@
 import React from 'react';
 
-const Loader = () => {
-  const loaderContainerStyle = {
-    display: 'flex',
-    justifyContent: 'center', // Horizontal centering
-    alignItems: 'center', // Vertical centering
-    height: '70vh', // Fill the height of the parent
-  };
-
-  const customLoaderStyle = {
-    width: '50px',
-    height: '50px',
-    background: `
-      radial-gradient(farthest-side, #766DF4 92%, #0000) 50% 0,
-      radial-gradient(farthest-side, #766DF4 92%, #0000) 50% 100%,
-      radial-gradient(farthest-side, #766DF4 92%, #0000) 100% 50%,
-      radial-gradient(farthest-side, #766DF4 92%, #0000) 0 50%
-    `,
-    backgroundSize: '12px 12px',
-    backgroundRepeat: 'no-repeat',
-    animation: 'spin 1s infinite'
-  };
-
+const Loading = () => {
   return (
-    <div style={loaderContainerStyle}>
-      <div style={customLoaderStyle}></div>
+    <div className="spinner-container">
+      <div className="spinner"></div>
+
+      <style>
+        {`
+          .spinner-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Adjust this value according to your layout */
+          }
+
+          .spinner {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: conic-gradient(#0000 10%, #474bff);
+            -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
+            animation: spinner-zp9dbg 1s infinite linear;
+          }
+
+          @keyframes spinner-zp9dbg {
+            to {
+              transform: rotate(1turn);
+            }
+          }
+        `}
+      </style>
     </div>
   );
 };
 
-export default Loader;
+export default Loading;
