@@ -26,8 +26,7 @@ const Navbar = () => {
   return (
     <>
       <div className="navbar_container">
-        <div className='global_flex container'>
-         
+        <div className='global_flex container'>         
           <Link to={'/'}><img className='logo' src="/image/icdoLogo.png" alt="icdo logo" /></Link>
           {auth.user ? (
             <>
