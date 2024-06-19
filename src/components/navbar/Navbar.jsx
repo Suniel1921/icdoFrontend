@@ -34,8 +34,8 @@ const Navbar = () => {
               <ul className={`navlinks global_flex ${showMenu ? 'show' : ''}`}>
                 <li><Link to={'/'}>Home</Link></li>
                 <li><Link to={'/about'}>About</Link></li>
-                <li><Link to={'/contact'}>Contact</Link></li>
                 <li><Link to={'/ourteam'}>Our Team</Link></li>
+                <li><Link to={'/contact'}>Contact</Link></li>
                 <li className='logout' onClick={handleLogout}>Logout</li>
               </ul>
             </>
@@ -43,10 +43,10 @@ const Navbar = () => {
             <ul className={`navlinks global_flex ${showMenu ? 'show' : ''}`}>
               <li><Link to={'/'}>Home</Link></li>
               <li><Link to={'/about'}>About</Link></li>
-              <li><Link to={'/contact'}>Contact</Link></li>
               <li><Link to={'/ourteam'}>Our Team</Link></li>
+              <li><Link to={'/contact'}>Contact</Link></li>
               <li><Link to={'/login'}>Login</Link></li>
-              <li><Link to={'/register'}>Register</Link></li>
+              {/* <li><Link to={'/register'}>Register</Link></li> */}
             </ul>
           )}
           {/* Hamburger Menu */}

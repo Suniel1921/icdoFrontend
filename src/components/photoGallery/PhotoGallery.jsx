@@ -22,7 +22,7 @@ const PhotoGallery = () => {
           {photos.map((photo, index) => (
             <div key={index} className='photoChild' data-aos="fade-right">
               <img src={photo.src} alt={photo.alt} />
-              <h5>{photo.title}</h5>
+              {/* <h5>{photo.title}</h5> */}
             </div>
           ))}
         </div>

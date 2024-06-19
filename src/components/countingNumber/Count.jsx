@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../countingNumber/count.css';
 
 const Count = () => {
+  const navigate = useNavigate();
   const [countData, setCountData] = useState([
-    { label: 'project completed', count: 10, animated: false },
-    { label: 'on Going Project', count: 20, animated: false },
-    // { label: 'Happy Client', count: 100, animated: false },
-    { label: 'awards', count: 8, animated: false },
+    { label: 'Project completed', count: 10, animated: false, route: '/project-completed' },
+    { label: 'on Going Project', count: 20, animated: false, route: '/ongoing-project' },
+    { label: 'Awards', count: 8, animated: false, route: null },
   ]);
 
   useEffect(() => {
@@ -52,11 +53,22 @@ const Count = () => {
     };
   }, [countData]);
 
+  const handleClick = (route) => {
+    if (route) {
+      navigate(route);
+    }
+  };
+
   return (
     <div className="count_container">
       <div className='count'>
         {countData.map((data, index) => (
-          <div className='count_content' key={index}>
+          <div 
+            className='count_content' 
+            key={index} 
+            onClick={() => handleClick(data.route)}
+            style={{ cursor: data.route ? 'pointer' : 'default' }}
+          >
             <h2>{data.animated ? data.count.toLocaleString() + '+' : '0+'}</h2>
             <p>{data.label}</p>
           </div>
@@ -67,6 +79,8 @@ const Count = () => {
 }
 
 export default Count;
+
+
 
 
 
