@@ -19,6 +19,7 @@ import 'aos/dist/aos.css';
 import Count from "./components/countingNumber/Count";
 import ProjectCompleted from "./components/countingNumber/ProjectCompleted";
 import OnGoingProject from "./components/countingNumber/OnGoingProject";
+import NewAbout from "./components/pages/about/NewAbout";
 
 const App = () => {
   //for aos animations
@@ -35,7 +36,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/abouts" element={<NewAbout/>} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/ourteam" element={<OurTeam />} />
             <Route path="/login" element={<Login />} />

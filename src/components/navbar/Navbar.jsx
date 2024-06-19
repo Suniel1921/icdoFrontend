@@ -33,7 +33,7 @@ const Navbar = () => {
               <h3 className='userName'>Hi ! {auth.user.name}</h3>
               <ul className={`navlinks global_flex ${showMenu ? 'show' : ''}`}>
                 <li><Link to={'/'}>Home</Link></li>
-                <li><Link to={'/about'}>About</Link></li>
+                <li><Link to={'/abouts'}>About</Link></li>
                 <li><Link to={'/ourteam'}>Our Team</Link></li>
                 <li><Link to={'/contact'}>Contact</Link></li>
                 <li className='logout' onClick={handleLogout}>Logout</li>
@@ -42,7 +42,7 @@ const Navbar = () => {
           ) : (
             <ul className={`navlinks global_flex ${showMenu ? 'show' : ''}`}>
               <li><Link to={'/'}>Home</Link></li>
-              <li><Link to={'/about'}>About</Link></li>
+              <li><Link to={'/abouts'}>About</Link></li>
               <li><Link to={'/ourteam'}>Our Team</Link></li>
               <li><Link to={'/contact'}>Contact</Link></li>
               <li><Link to={'/login'}>Login</Link></li>
