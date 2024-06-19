@@ -1,3 +1,17 @@
+.flag{
+    width: 10%;
+position: relative;
+top: 0;
+left: 174px;
+  
+}
+
+.sunil{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .banner_container{
     background-color:var(--primaryColor);
     color: var(--textWhite);
