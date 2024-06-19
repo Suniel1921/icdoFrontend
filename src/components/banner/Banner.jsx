@@ -3,6 +3,7 @@ import './../banner/banner.css'
 import { FaFacebookF } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 
 const Banner = () => {
@@ -22,9 +23,9 @@ const Banner = () => {
 
           <div className='banner_right'>
             <div className='social_icons global_flex'>
-              <p><FaFacebookF /></p>
-              <p><FaSquareInstagram /></p>
-              <p><FaTwitter /></p>
+            <Link to='https://facebook.com' target='_blank' className='social_icon'> <p><FaFacebookF /></p> </Link>
+            <Link to='https://facebook.com' target='_blank' className='social_icon'> <p><FaSquareInstagram /> </p></Link>
+            <Link to='https://facebook.com' target='_blank' className='social_icon'> <p><FaTwitter /></p> </Link>
             </div>
           </div>
 
