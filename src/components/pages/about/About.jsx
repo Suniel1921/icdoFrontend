@@ -28,10 +28,10 @@ const About = () => {
             <p>
             Here at ICDO, our goal is clear: eradicating poverty globally. Through our platform, we unite kind-hearted supporters with vital projects, guaranteeing that every donation counts
             </p>
-            <div className="button_container">
+            {/* <div className="button_container">
               <button className="btn readMore_btn">Read more</button>
               <button className="btn ">How we work</button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
