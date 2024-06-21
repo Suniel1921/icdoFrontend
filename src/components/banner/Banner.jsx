@@ -14,7 +14,7 @@ const Banner = () => {
 
           <div className='banner_left global_flex'>
             <p>+977 015573382</p>
-            <p>info@icdolalitpur.com</p>
+            <p>mail2icdo@gmail.com</p>
           </div>
 
           <div className='bannerMid'>
