@@ -77,7 +77,7 @@ const Announce = () => {
                 required
               />
             </div>
-            <button type="submit">Submit</button>
+            <button className='announceBtn' type="submit">Submit</button>
           </form>
         </div>
       </div>
