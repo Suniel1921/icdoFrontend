@@ -35,7 +35,7 @@ const Announcement = () => {
           <div className="announcement-content">
             {announcements.length > 0 ? (
               announcements.map((announcement, index) => (
-                <div className="card" key={index} onClick={() => handleCardClick(announcement)}>
+                <div className="announcement-card" key={index} onClick={() => handleCardClick(announcement)}>
                   <img src={announcement.image} alt="" className="card-img" />
                   <div className="card-body">
                     <h3 className="card-title">{announcement.title}</h3>
