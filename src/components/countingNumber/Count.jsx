@@ -8,7 +8,7 @@ const Count = () => {
   const [countData, setCountData] = useState([
     { label: 'Project completed', count: 10, animated: false, route: '/project-completed' },
     { label: 'On Going Project', count: 20, animated: false, route: '/ongoing-project' },
-    { label: 'Members', count: 10, animated: false, route: '/members' },
+    { label: 'Members', count: 12, animated: false, route: '/members' },
     { label: 'Awards', count: 8, animated: false, route: null },
   ]);
 
