@@ -38,7 +38,7 @@ const NewAbout = () => {
           </div>
           <div id="objectives-section">
             <h2>Objectives</h2>
-            <ul>
+            <ul id='mission-text'>
               <li>Organize skill-based and income-generating programs uniting poor, marginalized people of the oppressed community.</li>
               <li>Uplift the living standard of poor and marginalized members organized in different groups through sustainable livelihood programs.</li>
               <li>Reduce vulnerability and increase resiliency through Disaster Risk Management.</li>
@@ -53,10 +53,10 @@ const NewAbout = () => {
           <div id="approach-section">
             <h2 className='newAboutHeading'>Working Approach</h2>
             <img className='newAboutImg' src="/image/work.jpg" alt="Working Approach" id="approach-image"/>
-            <p id="approach-text">
+            <p id='mission-text'>
               The purpose of ICDO-Lalitpur's working modality is to contribute to the development of self-reliant groups, CBOs, or cooperatives capable of continuing the project interventions and growing or graduating on their own even after the exit of ICDO-Lalitpur.
             </p>
-            <ul>
+            <ul id='mission-text'>
               <li>
                 <strong>Local community-led organizations:</strong> ICDO-Lalitpur emphasizes strengthening local organizations led and owned by community groups. We facilitate the enhancement of their capacities and competency to bargain, negotiate, influence, and take stake in decisions affecting them.
               </li>
@@ -77,14 +77,14 @@ const NewAbout = () => {
           <div id="target-group-section">
             <h2 className='newAboutHeading'>Target Group</h2>
             <img className='newAboutImg' src="/image/work2.jpg" alt="Target Group" id="target-group-image"/>
-            <p id="target-group-text">
+            <p id='mission-text'>
               ICDO-Lalitpur works with disaster-affected, marginalized, and vulnerable people who are socioeconomically disadvantaged. Priority is given to women, people with disabilities, and the landless. We work with both rural and urban populations, emphasizing remote and vulnerable households and communities.
             </p>
           </div>
           <div id="core-principles-section">
             <h2 className='newAboutHeading'>Core Principles and Values</h2>
             <img className='newAboutImg' src="/image/work1.jpg" alt="Core Principles and Values" id="core-principles-image"/>
-            <ul>
+            <ul id='mission-text'>
               <li>Accountability and transparency</li>
               <li>Inclusive and participatory</li>
               <li>Adherence to rights and duty</li>
